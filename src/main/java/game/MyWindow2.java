@@ -27,6 +27,10 @@ public class MyWindow2 extends JFrame {
        tf.setBounds(x1,y1,20,20);
         add(tf);
 
+        JTextField tf1 = new JTextField("*");
+        tf1.setBounds(x2,y2,20,20);
+        add(tf);
+
 
         
 
