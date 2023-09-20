@@ -1,6 +1,7 @@
 package game;
 
 import javax.swing.*;
+import java.awt.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -32,7 +33,7 @@ public class MyWindow extends JFrame {
         button2.setBounds(x2, y2, 80, 80);
         add(button2);
 
-        setVisible(true);
+
 
         List<Object> but = new ArrayList<>() {
         };
@@ -45,8 +46,52 @@ public class MyWindow extends JFrame {
             System.out.println("Here comes info about objects: "+"\n"+i);
         }
 
+        // horizontal line:
+
+        JButton tf = new JButton("*");
+        tf.setBounds(450,400,50,50);
+       // add(tf);
+        JButton tf1 = new JButton("&");
+        tf1.setBounds(400,400,50,50);
+      // add(tf1);
+        JButton tf2 = new JButton("%");
+        tf2.setBounds(350,400,50,50);
+       // add(tf2);
+
+        List<Object> tfl = new ArrayList<>(){};
+
+        tfl.add(tf);
+        tfl.add(tf1);
+        tfl.add(tf2);
+
+        for (Object o: tfl
+             ) {add((Component) o);
+        }
+
+        // vertical line:
+
+        JButton tfu = new JButton("*");
+        tfu.setBounds(200,200,50,50);
+        // add(tfu);
+        JButton tfu1 = new JButton("&");
+        tfu1.setBounds(200,250,50,50);
+        // add(tfu1);
+        JButton tfu2 = new JButton("%");
+        tfu2.setBounds(200,300,50,50);
+        // add(tfu2);
+
+        List<Object> tfll = new ArrayList<>(){};
+
+        tfll.add(tfu);
+        tfll.add(tfu1);
+        tfll.add(tfu2);
+
+        for (Object o: tfll
+        ) {add((Component) o);
+        }
 
 
+        setVisible(true);
     }
 
 
